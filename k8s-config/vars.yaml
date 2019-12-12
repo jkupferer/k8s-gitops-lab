@@ -2,5 +2,8 @@
 k8s_resources:
 - template:
     file: image-registry-route.j2
-- file: gitops-anarchygovernor.yaml
-- file: cluster-gitops-anarchysubject.yaml
+
+k8s_namespaces:
+  k8s-config2:
+  - file: gitops-anarchygovernor.yaml
+  - file: cluster-gitops-anarchysubject.yaml
