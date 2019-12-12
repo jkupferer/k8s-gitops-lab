@@ -1,0 +1,4 @@
+---
+k8s_resources:
+- template:
+    file: image-registry-route.j2
