@@ -1,0 +1,13 @@
+---
+apiVersion: anarchy.gpte.redhat.com/v1
+kind: AnarchySubject
+metadata:
+  name: cluster
+spec:
+  governor: gitops
+  vars:
+    k8s_config_sources:
+    - name: k8s-gitops-lab
+      base_path: k8s-config
+      git:
+        repo: https://github.com/jkupferer/k8s-gitops-lab.git
